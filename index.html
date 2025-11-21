@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Gaji Karyawan - Rahmattulah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Kalkulator Gaji Karyawan 📊</h1>
+            <p><strong>Nama:</strong> Rahmattulah | <strong>NIM:</strong> 056105086</p>
+            <p>Tugas 3: Algoritma dan Pemprograman</p>
+        </header>
+
+        <main>
+            <section class="card input-section">
+                <h2>Input Data Karyawan</h2>
+                <div class="form-group">
+                    <label for="golongan">Golongan (A/B/C):</label>
+                    <select id="golongan" required>
+                        <option value="">-- Pilih Golongan --</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="jamLembur">Jumlah Jam Lembur:</label>
+                    <input type="number" id="jamLembur" value="0" min="0" required>
+                </div>
+                <button onclick="hitungGaji()">Hitung Gaji</button>
+            </section>
+
+            <section class="card result-section" id="result-output" style="display: none;">
+                <h2>Rincian Gaji</h2>
+                <p>Golongan Karyawan: <span id="out-golongan"></span></p>
+                <p>Gaji Pokok: <span id="out-gajiPokok"></span></p>
+                <p>Jam Lembur: <span id="out-jamLembur"></span></p>
+                <p>Persentase Lembur: <span id="out-persenLembur"></span></p>
+                <p>Gaji Lembur: <span id="out-gajiLembur"></span></p>
+                <hr>
+                <div class="total-gaji">
+                    <strong>TOTAL PENGHASILAN:</strong> 
+                    <span id="out-totalGaji"></span>
+                </div>
+            </section>
+
+            <p id="error-message" class="error" style="display: none;">[ERROR] Golongan tidak valid! Silakan pilih A, B, atau C.</p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
