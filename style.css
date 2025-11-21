@@ -1,1 +1,132 @@
+:root {
+    --primary-color: #3498db; /* Biru */
+    --secondary-color: #2ecc71; /* Hijau */
+    --background-color: #ecf0f1; /* Abu-abu muda */
+    --card-background: #ffffff;
+    --text-color: #34495e; /* Abu-abu gelap */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+}
+
+/* Card Styling for Sections */
+.card {
+    background-color: var(--card-background);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+    font-size: 1em;
+}
+
+/* Button Styling */
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60; /* Hijau yang sedikit lebih gelap */
+}
+
+/* Result Section Styling */
+.result-section p {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-section hr {
+    border: 0;
+    border-top: 1px dashed #bdc3c7;
+    margin: 15px 0;
+}
+
+.total-gaji {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    color: var(--primary-color);
+    padding-top: 10px;
+}
+
+/* Error Message Styling */
+.error {
+    background-color: #e74c3c; /* Merah */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
